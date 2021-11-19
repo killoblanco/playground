@@ -2,7 +2,7 @@ import { Box, styled } from '@mui/material';
 import { brown } from '@mui/material/colors';
 import noise from 'assets/noise.svg';
 
-const Ground = styled(Box)(({ theme }) => ({
+const Ground = styled(Box)(() => ({
   alignItems: 'flex-start',
   backgroundColor: brown['300'],
   backgroundImage: `linear-gradient(
