@@ -1,0 +1,15 @@
+{
+  "Landing": {
+    "Logo": {
+      "Tooltip": "Ver Perfil",
+      "AltText": "Yo como Avatar 😊"
+    }
+  },
+  "Footer": "Hecho con ❤️ & ☕ por",
+  "Playground": {
+    "FlappyBird": {
+      "Title": "Flappy Bird",
+      "Description": "Simple animación de Flappy Bird"
+    }
+  }
+}
