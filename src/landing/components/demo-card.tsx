@@ -35,7 +35,7 @@ function DemoCard({
           alt={t(title)}
         />
         <CardContent>
-          <Typography variant="h6">{t(title)}</Typography>
+          <Typography variant="h5">{t(title)}</Typography>
           <Typography variant="body1">{t(description)}</Typography>
           <Grid container spacing={1} mt={1}>
             {tags.map((tag) => (
