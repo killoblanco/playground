@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes } from '@mui/material';
+import { alpha, createTheme, responsiveFontSizes } from '@mui/material';
 import { teal } from '@mui/material/colors';
 
 export const theme = responsiveFontSizes(createTheme({
@@ -10,6 +10,21 @@ export const theme = responsiveFontSizes(createTheme({
         },
       },
     },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          borderBottom: `4px solid ${teal.A400}`,
+          backgroundColor: alpha('#121212', 0.48),
+        },
+      },
+    },
+    MuiChip: {
+      styleOverrides: {
+        outlined: {
+          borderColor: teal.A700,
+        },
+      },
+    },
   },
   palette: {
     mode: 'dark',
@@ -18,9 +33,6 @@ export const theme = responsiveFontSizes(createTheme({
       main: teal.A400,
       dark: teal.A700,
     },
-  },
-  shape: {
-    borderRadius: 4,
   },
   typography: {
     fontFamily: ['Lato', 'sans-serif'].join(','),
