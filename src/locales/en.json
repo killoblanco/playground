@@ -5,6 +5,12 @@
       "AltText": "Me as Avatar 😊"
     }
   },
+  "404": {
+    "ImgAlt": "I am a kettle",
+    "Title": "418: I'm a Teapot ...",
+    "Subtitle": "... but I couldn't find the page you were looking for. Please try another URL.",
+    "BackBtn": "Return to home page"
+  },
   "Footer": "Made with ❤️ & ☕ by",
   "Playground": {
     "FlappyBird": {
