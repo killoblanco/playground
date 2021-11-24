@@ -5,6 +5,12 @@
       "AltText": "Yo como Avatar 😊"
     }
   },
+  "404": {
+    "ImgAlt": "Soy una tetera",
+    "Title": "418: Soy una Tetera ...",
+    "Subtitle": "... pero no encontré la página que buscabas. Intenta con otra URL.",
+    "BackBtn": "Regresar al inicio"
+  },
   "Footer": "Hecho con ❤️ & ☕ por",
   "Playground": {
     "FlappyBird": {
