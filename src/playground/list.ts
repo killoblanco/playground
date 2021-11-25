@@ -3,6 +3,7 @@ import tags from './tags';
 
 export interface PlaygroundElement {
   description: string;
+  path: string;
   preview: string;
   title: string;
   tags: string[];
@@ -11,6 +12,7 @@ export interface PlaygroundElement {
 const PlaygroundList: PlaygroundElement[] = [
   {
     description: 'Playground.FlappyBird.Description',
+    path: 'flappy-bird',
     preview: flappyBird,
     title: 'Playground.FlappyBird.Title',
     tags: [
