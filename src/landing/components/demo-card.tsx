@@ -2,6 +2,7 @@ import { Card, CardActionArea, CardContent, CardMedia, Chip, Grid, styled, Typog
 import { PlaygroundElement } from 'playground/list';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Media = styled(CardMedia)(() => ({
   aspectRatio: '16 / 10',
@@ -9,6 +10,7 @@ const Media = styled(CardMedia)(() => ({
 
 function DemoCard({
   description,
+  path,
   preview,
   title,
   tags,
@@ -17,18 +19,13 @@ function DemoCard({
   const [isHover, setIsHover] = useState(false);
   const toggleHover = () => setIsHover(!isHover);
 
-  console.log(
-    t(title),
-    t('Landing.Logo.Tooltip')
-  )
-
   return (
     <Card
       elevation={isHover ? 12 : 2}
       onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}
     >
-      <CardActionArea>
+      <CardActionArea component={Link} to={`/${path}`}>
         <Media
           component="img"
           image={preview}
