@@ -1,4 +1,4 @@
-import MainLayout from 'core/router/layouts/main';
+import MainLayout from 'router/layouts/main';
 import DemoGrid from './components/demo-grid';
 
 function Landing() {
