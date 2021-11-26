@@ -5,6 +5,7 @@ import { PropsWithChildren, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import PlaygroundList from 'playground/list';
+import SEO, { SeoProps } from '../../components/seo';
 
 const MenuBtn = styled(Fab)(({ theme }) => ({
   position: 'absolute',
@@ -30,7 +31,7 @@ const Menu = styled(Drawer)(({ theme }) => ({
   },
 }));
 
-function Playground({ children }: PropsWithChildren<any>) {
+function Playground({ children, seo }: PropsWithChildren<{ seo: SeoProps }>) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
 
@@ -46,6 +47,7 @@ function Playground({ children }: PropsWithChildren<any>) {
 
   return (
     <>
+      <SEO {...seo}/>
       <LogoBox><Logo /></LogoBox>
       <MenuBtn color="primary" size="small" onClick={toggleDrawer}>
         {open ? <MenuOpenRounded sx={{ transform: 'rotate(180deg)' }} /> : <MenuRounded />}
