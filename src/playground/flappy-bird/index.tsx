@@ -1,4 +1,5 @@
 import Playground from 'router/layouts/playground';
+import PlaygroundSeo from '../seo';
 import Bird from './components/bird';
 import Cloud from './components/cloud';
 import Grass from './components/grass';
@@ -8,7 +9,7 @@ import Stage from './components/stage';
 
 function FlappyBird() {
   return (
-    <Playground>
+    <Playground seo={PlaygroundSeo.flappyBird}>
       <Stage>
         <Sky>
           <Cloud idx={1} />
